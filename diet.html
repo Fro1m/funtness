@@ -1,0 +1,205 @@
+<html>
+  <head>
+    <title>Fit and Healthy</title>
+    <style>
+      /* Add your CSS styles here */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+      }
+
+      header h1 {
+        font-size: 36px;
+      }
+
+      header nav ul {
+        list-style: none;
+        display: flex;
+      }
+
+      header nav ul li {
+        margin-left: 20px;
+      }
+
+      header nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      header nav ul li a:hover {
+        color: #ff9900;
+      }
+
+      main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px;
+      }
+
+      main section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+      }
+
+      main section h2 {
+        grid-column: 1 / -1;
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+
+      main section p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      main section button {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #ff9900;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+      main section button:hover {
+        background-color: #ff6600;
+      }
+
+      main section .service {
+        text-align: center;
+      }
+
+      main section .service img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      main section .service h3 {
+        font-size: 24px;
+        margin-top: 10px;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      footer p {
+        font-size: 16px;
+      }
+
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 24px;
+        }
+
+        header nav ul {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        header nav ul li {
+          margin-top: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Fit and Healthy</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/workout">Workout</a></li>
+          <li><a href="/diet">Diet</a></li>
+          <li><a href="/progress">Progress</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>This is the diet page</h2>
+        <p>
+          We are a fitness and nutrition website that helps you achieve your
+          health goals. Whether you want to lose weight, gain muscle, or improve
+          your overall wellness, we have the right plan for you.
+        </p>
+        <p>
+          Our website offers personalized fitness and nutrition plans, online
+          coaching, and a supportive community. You can track your progress, get
+          feedback, and stay motivated with our app.
+        </p>
+        <p>
+          Join us today and start your journey to a fit and healthy lifestyle.
+        </p>
+        <button>Sign Up Now</button>
+      </section>
+      <section>
+        <h2>Our Services</h2>
+        <div class="service">
+          <img src="fitness.jpg" alt="Fitness" />
+          <h3>Fitness</h3>
+          <p>
+            We offer a variety of fitness programs, such as HIIT, yoga, pilates,
+            strength training, and more. You can choose the level and duration
+            that suits you best. Our trainers will guide you through each
+            workout and help you improve your form and technique.
+          </p>
+        </div>
+        <div class="service">
+          <img src="nutrition.jpg" alt="Nutrition" />
+          <h3>Nutrition</h3>
+          <p>
+            We provide customized nutrition plans based on your goals,
+            preferences, and dietary needs. You can access hundreds of delicious
+            and healthy recipes, meal plans, and shopping lists. Our
+            nutritionists will also give you tips and advice on how to eat well
+            and stay on track.
+          </p>
+        </div>
+        <div class="service">
+          <img src="wellness.jpg" alt="Wellness" />
+          <h3>Wellness</h3>
+          <p>
+            We care about your mental and emotional health as well as your
+            physical health. That's why we offer wellness services, such as
+            meditation, mindfulness, stress management, and more. You can learn
+            how to relax, cope, and thrive in your daily life.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© 2024 Fit and Healthy. All rights reserved.</p>
+      <p>
+        Follow us on [Facebook](https://github.com/topics/fitness-website),
+        [Twitter](https://www.codewithfaraz.com/article/110/20-inspiring-gym-websites-html-css-and-javascript-in-2023),
+        and
+        [Instagram](https://nicepage.com/s/168816/fitness-training-and-nutrition-css-template).
+      </p>
+    </footer>
+  </body>
+</html>
